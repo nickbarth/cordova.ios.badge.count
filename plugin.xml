@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.ios.badge.count" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>iOSBadgeCount</name>
+  <description>Plugin for iOS to update app icon badge count.</description>
+  <author>Nick Barth</author>
+  <keywords>iOS App Icon Badge</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/iOSBadgeSet.js" name="iOSBadgeSet" target="www/iOSBadgeSet.js">
+    <clobbers target="window.iOSBadgeSet" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="iOSBadgeSet">
+        <param name="ios-package" value="iOSBadgeSet"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="iOSBadgeSet" value="iOSBadgeSet"/>
+    </config-file>
+    <header-file src="src/ios/iOSBadgeSet.h" />
+    <source-file src="src/ios/iOSBadgeSet.m" />
+  </platform>
+</plugin>
