@@ -11,7 +11,6 @@
 
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     localNotification.applicationIconBadgeNumber = [count intValue];
-    [localNotification release];
 
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
     NSString* javaScript = [pluginResult toSuccessCallbackString:self.callbackId];
