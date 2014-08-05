@@ -8,9 +8,7 @@
     self.callbackId = command.callbackId;
 
     NSString* count = [command.arguments objectAtIndex:0];
-
-    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-    localNotification.applicationIconBadgeNumber = [count intValue];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:[count intValue]];
 
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
     NSString* javaScript = [pluginResult toSuccessCallbackString:self.callbackId];
