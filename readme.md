@@ -22,4 +22,6 @@ window.iOSBadgeSet(5, function () {
 
 ## LICENSE ##
 
-The MIT License
+The CC0 License
+
+[![CC0](http://i.creativecommons.org/l/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
