@@ -7,7 +7,7 @@
   <description>Plugin for iOS to update app icon badge count.</description>
   <author>Nick Barth</author>
   <keywords>iOS App Icon Badge</keywords>
-  <license>MIT</license>
+  <license>CC0</license>
 
   <!-- JavaScript interface -->
   <js-module src="www/iOSBadgeSet.js" name="iOSBadgeSet" target="www/iOSBadgeSet.js">
